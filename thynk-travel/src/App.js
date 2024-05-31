@@ -5,7 +5,6 @@ function App() {
     <div>
       <Header />
       
-
     </div>
   );
 }

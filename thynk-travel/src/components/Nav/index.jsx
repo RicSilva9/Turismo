@@ -9,6 +9,8 @@ import {
   Transition,
 } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import Modal from '../Modal'
+import { useState } from 'react'
 
 const navigation = [
   { name: 'Home', href: '#home-id-nav', current: true },
@@ -27,13 +29,19 @@ export default function Nav() {
     })
   }
 
+  const [openModal, setOpenModal] = useState(false)
+
   return (
     <Disclosure
       as="nav"
-      className="fixed top-0 left-0 right-0 z-50 px-16 max-md:px-8 sm:mx-4 max-sm:px-4 backdrop-blur bg-slate-900 bg-opacity-40"
+      className="fixed top-0 left-0 right-0 z-40 px-16 max-md:px-8 sm:mx-4 max-sm:px-4 backdrop-blur bg-slate-900 bg-opacity-40"
     >
       {({ open }) => (
         <>
+          <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
+            {/* Abrir modal de login */}
+          </Modal> 
+
           <div className="mx-auto max-w-7xl">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -104,17 +112,7 @@ export default function Nav() {
                   >
                     <MenuItems className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <MenuItem>
-                        {({ focus }) => (
-                          <a
-                            href="#"
-                            className={classNames(
-                              focus ? 'bg-gray-100' : '',
-                              'block px-4 py-2 text-sm text-gray-700'
-                            )}
-                          >
-                            Login
-                          </a>
-                        )}
+                      <button className="text-black w-full" onClick={() => setOpenModal(true)}>Login</button>
                       </MenuItem>
                     </MenuItems>
                   </Transition>
@@ -122,7 +120,6 @@ export default function Nav() {
               </div>
             </div>
           </div>
-
           <DisclosurePanel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
@@ -150,5 +147,6 @@ export default function Nav() {
         </>
       )}
     </Disclosure>
+    
   )
 }
