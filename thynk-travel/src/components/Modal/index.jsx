@@ -88,10 +88,12 @@ export default function Modal({ isOpen, setModalOpen, children }) {
             <div>
               <p className="text-center text-gray-700 text-sm mt-6 cursor-default">or with</p>
               <div className="flex justify-center gap-5 mt-6">
-                <button className="text-black px-3 py-1 border border-black rounded-lg hover:bg-blue-500 hover:text-white hover:border-none hover:font-bold">
+                <button className="text-black px-3 py-1 border border-black rounded-lg hover:bg-blue-500 hover:text-white hover:border-none hover:font-bold flex items-center gap-1">
+                  <img src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" className="max-h-5 bg-slate-50 rounded-full" />
                   Google
                 </button>
-                <button className="text-black px-3 py-1 border border-black rounded-lg hover:bg-black hover:text-white hover:border-none hover:font-bold">
+                <button className="text-black px-3 py-1 border border-black rounded-lg hover:bg-black hover:text-white hover:border-none hover:font-bold flex items-center gap-1">
+                  <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" className="max-h-5 bg-slate-50 rounded-full" />
                   Github
                 </button>
               </div>

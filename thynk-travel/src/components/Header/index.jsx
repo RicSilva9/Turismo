@@ -3,7 +3,7 @@ import Nav from '../Nav'
 export default function Header() {
   return (
     <header
-      className="bg-slate-700 text-white py-20 mx-4 px-16 rounded-b-2xl max-sm:mx-0 max-md:px-8 max-sm:pb-4"
+      className="bg-slate-700 text-white pt-20 pb-24 mx-4 px-16 rounded-b-2xl max-sm:mx-0 max-md:px-8 max-sm:pb-4"
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL}/img/bg-header.png)`,
       }}

@@ -34,7 +34,7 @@ export default function Nav() {
   return (
     <Disclosure
       as="nav"
-      className="fixed top-0 left-0 right-0 z-40 px-16 max-md:px-8 sm:mx-4 max-sm:px-4 backdrop-blur bg-slate-900 bg-opacity-40"
+      className="fixed top-0 left-0 right-0 z-40 px-16 max-md:px-8 sm:mx-4 max-sm:px-4 backdrop-blur bg-slate-900 bg-opacity-40 rounded-b-lg"
     >
       {({ open }) => (
         <>
@@ -42,7 +42,7 @@ export default function Nav() {
             {/* Abrir modal de login */}
           </Modal> 
 
-          <div className="mx-auto max-w-7xl">
+          <div className="mx-auto"> 
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
