@@ -27,7 +27,7 @@ export default function Destino() {
 
         <div className="mt-5 lg:mt-24 max-md:mt-10">
           <h2 className="text-4xl w-2/4 fjalla tracking-normal leading-tight hover:cursor-default max-md:w-full max-md:text-3xl cursor-default">Escolha os melhores destinos na melhor agencia </h2>
-          <p className="mt-5 w-2/4 text-sm ps-3 py-2 text-lg border-s-2 border-orange-500 max-lg:w-full cursor-default">Com a Agência de Viagens, você pode explorar os melhores destinos ao redor do mundo. Oferecemos pacotes personalizados para destinos exóticos, praias paradisíacas, cidades históricas e muito mais. Descubra novas culturas, experimente novos sabores e crie memórias inesquecíveis em sua próxima viagem.</p>
+          <p className="mt-5 w-2/4 text-sm ps-3 py-2 md:text-lg border-s-2 border-orange-500 max-lg:w-full cursor-default">Com a Agência de Viagens, você pode explorar os melhores destinos ao redor do mundo. Oferecemos pacotes personalizados para destinos exóticos, praias paradisíacas, cidades históricas e muito mais. Descubra novas culturas, experimente novos sabores e crie memórias inesquecíveis em sua próxima viagem.</p>
         </div>
 
         <div className='md:hidden mt-3 overflow-hidden'>
