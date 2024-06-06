@@ -21,7 +21,7 @@ export default function Destino() {
   };
   
   return (
-    <section className="lg:px-16 mx-4 max-sm:mx-0 md:px-8 flex lg:-mt-10 max-md:px-0">
+    <section className="lg:px-16 mx-4 max-sm:mx-0 md:px-8 flex lg:-mt-10 max-md:px-0" id='destinos-id-nav'>
 
       <section className="md:w-3/4 max-md:px-4 w-full">
 
@@ -58,7 +58,7 @@ export default function Destino() {
       </section>
 
       <div className="max-lg:flex max-lg:flex-col max-lg:items-end max-lg:w-1/4 max-md:hidden">
-        <img src={`${process.env.PUBLIC_URL}/img/img-destinos-001.png`} alt="Imagem de destinos" className="lg:max-h-48 md:max-h-28 mt-5 cursor-default"/>
+        <img src={`${process.env.PUBLIC_URL}/img/img-destinos-001.png`} alt="Imagem de destinos" className="lg:max-h-48 md:max-h-28 max-lg:mt-5 cursor-default"/>
         <img src={`${process.env.PUBLIC_URL}/img/img-destinos-002.png`} alt="Imagem de destinos" className="lg:max-h-48 mt-5 md:max-h-28 cursor-default"/>
         <img src={`${process.env.PUBLIC_URL}/img/img-destinos-003.png`} alt="Imagem de destinos" className="lg:max-h-48 mt-5 md:max-h-28 cursor-default"/>
       </div>
