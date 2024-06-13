@@ -12,7 +12,7 @@ export default function Header() {
       <Nav />
 
       <section>
-        <h1 className="text-5xl w-1/2 fjalla tracking-normal leading-tight hover:cursor-default	max-lg:text-4xl max-lg:w-2/3 max-sm:w-full max-sm:text-3xl">
+        <h1 className="w-1/2 fjalla tracking-normal leading-tight hover:cursor-default max-lg:w-2/3 max-sm:w-full text-3xl sm:text-4xl lg:text-4xl">
           Oferecemos os melhores pacotes de viagem para suas férias!
         </h1>
         <p className="mt-2 w-1/2 hover:cursor-default max-lg::text-sm max-lg:w-2/3 max-md:text-xs max-sm:hidden">
