@@ -97,7 +97,7 @@ export default function Nav() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src="https://avatars.githubusercontent.com/u/4918549?s=80&v=4"
+                        src="https://i.pinimg.com/736x/de/ba/87/deba871bd0100ddf6f530dc30f87272a.jpg"
                         alt=""
                       />
                     </MenuButton>

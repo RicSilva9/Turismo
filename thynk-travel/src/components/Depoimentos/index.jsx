@@ -43,12 +43,12 @@ export default function Depoimentos() {
   };
 
   return (
-    <section className="md:mt-24 mt-16 md:mx-0 mx-4">
+    <section className="md:mt-24 mt-16 md:mx-0 mx-4" id="depoimentos-id-nav">
       <h2 className="text-center fjalla tracking-normal leading-tight hover:cursor-default text-3xl sm:text-4xl lg:text-4xl max-w-md m-auto">Veja o que nossos clientes dizem sobre nossos serviços</h2>
       
     <div className="md:mt-10 flex justify-center">
 
-      <div className="sm:hidden w-full p-10">
+      <div className="sm:hidden w-full p-10 max-sm:px-0 overflow-hidden">
         <Slider {...settings}>
           {content.map((item, index) => (
             <div key={index} className="h-60">
@@ -83,7 +83,7 @@ export default function Depoimentos() {
 
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-9 sm:grid-cols-2 max-sm:hidden">
+      <div className="grid lg:grid-cols-3 gap-9 sm:grid-cols-2 max-sm:hidden lg:px-16 md:px-8 px-0">
         <Avaliacao />
         <Avaliacao />
         <Avaliacao />
