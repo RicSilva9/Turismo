@@ -60,7 +60,7 @@ export default function Nav__Header() {
                 <div className="flex flex-shrink-0 items-center max-sm:hidden">
                   <img
                     className="h-10 w-auto"
-                    src={`${process.env.PUBLIC_URL}/img/business-logo.png`}
+                    src={`${process.env.PUBLIC_URL}/img/header/business-logo.png`}
                     alt="Logo"
                   />
                 </div>

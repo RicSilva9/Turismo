@@ -5,14 +5,14 @@ export default function Header() {
     <header
       className="bg-slate-700 text-white bg-fixed bg-cover bg-center rounded-b-2xl pt-20 pb-24 mx-4 px-16 max-sm:mx-0 max-md:px-8 max-sm:pb-20"
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/img/bg-header.png)`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/img/header/bg-header.png)`,
       }}
       id="home-id-nav"
     >
       <Nav__Header />
 
       <section>
-        <h1 className="w-1/2 fjalla tracking-normal leading-tight hover:cursor-default max-lg:w-2/3 max-sm:w-full text-3xl sm:text-4xl lg:text-4xl">
+        <h1 className="w-1/2 fjalla tracking-normal leading-tight hover:cursor-default max-lg:w-2/3 max-sm:w-full text-3xl sm:text-4xl">
           Oferecemos os melhores pacotes de viagem para suas férias!
         </h1>
         <p className="mt-2 w-1/2 hover:cursor-default max-lg::text-sm max-lg:w-2/3 max-md:text-xs max-sm:hidden">

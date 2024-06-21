@@ -5,7 +5,7 @@ export default function Comentario__Depoimentos() {
       <div className="flex items-center gap-2">
 
          <div>
-          <img src={`${process.env.PUBLIC_URL}/img/profile-img-comentario1.png`} alt="avatar do autor" className="lg:h-10 md:h-12" />
+          <img src={`${process.env.PUBLIC_URL}/img/depoimentos/profile-img-comentario1.png`} alt="avatar do autor" className="lg:h-10 md:h-12" />
          </div>
 
          <div>
@@ -14,15 +14,15 @@ export default function Comentario__Depoimentos() {
          </div>
       </div>
       <div>
-        <img src={`${process.env.PUBLIC_URL}/img/icon8.png`} alt="icon" className="lg:h-6 md:h-5" />  {/* devo atualizar para colocar icons */}
+        <img src={`${process.env.PUBLIC_URL}/img/depoimentos/icon8.png`} alt="icon" className="lg:h-6 md:h-5" />  {/* devo atualizar para colocar icons */}
         <p className="text-gray-600 text-center lg:text-base md:text-sm leading-tight">Inesquecível! A viagem foi incrível do começo ao fim.</p>
        
         <div className="flex justify-center items-center gap-3 lg:mt-3 md:mt-1"> {/* devo atualizar para colocar icons */}
-          <img src={`${process.env.PUBLIC_URL}/img/icon7.png`} alt="icon" />
-          <img src={`${process.env.PUBLIC_URL}/img/icon7.png`} alt="icon" />
-          <img src={`${process.env.PUBLIC_URL}/img/icon7.png`} alt="icon" />
-          <img src={`${process.env.PUBLIC_URL}/img/icon7.png`} alt="icon" />
-          <img src={`${process.env.PUBLIC_URL}/img/icon7.png`} alt="icon" />
+          <img src={`${process.env.PUBLIC_URL}/img/depoimentos/icon7.png`} alt="icon" />
+          <img src={`${process.env.PUBLIC_URL}/img/depoimentos/icon7.png`} alt="icon" />
+          <img src={`${process.env.PUBLIC_URL}/img/depoimentos/icon7.png`} alt="icon" />
+          <img src={`${process.env.PUBLIC_URL}/img/depoimentos/icon7.png`} alt="icon" />
+          <img src={`${process.env.PUBLIC_URL}/img/depoimentos/icon7.png`} alt="icon" />
         </div>
       </div>
     </div>
