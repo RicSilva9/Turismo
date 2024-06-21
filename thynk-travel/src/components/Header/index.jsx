@@ -3,7 +3,7 @@ import Nav__Header from "../Nav__Header";
 export default function Header() {
   return (
     <header
-      className="bg-slate-700 text-white pt-20 pb-24 mx-4 px-16 rounded-b-2xl max-sm:mx-0 max-md:px-8 max-sm:pb-20 bg-fixed"
+      className="bg-slate-700 text-white bg-fixed bg-cover bg-center rounded-b-2xl pt-20 pb-24 mx-4 px-16 max-sm:mx-0 max-md:px-8 max-sm:pb-20"
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL}/img/bg-header.png)`,
       }}
@@ -28,7 +28,7 @@ export default function Header() {
             Destino
           </span>
         </div>
-        <div className="bg-slate-50 text-black p-2 pb-4 rounded-b-2xl flex justify-around items-center max-sm:flex-col">
+        <div className="bg-slate-50 text-black p-2 pb-4 rounded-b-2xl flex justify-around items-center max-sm:flex-col -mt-2">
           <div className="flex flex-col">
             <label
               for="location"
