@@ -1,4 +1,4 @@
-import Nav from '../Nav'
+import Nav__Header from "../Nav__Header";
 
 export default function Header() {
   return (
@@ -9,7 +9,7 @@ export default function Header() {
       }}
       id="home-id-nav"
     >
-      <Nav />
+      <Nav__Header />
 
       <section>
         <h1 className="w-1/2 fjalla tracking-normal leading-tight hover:cursor-default max-lg:w-2/3 max-sm:w-full text-3xl sm:text-4xl lg:text-4xl">

@@ -1,7 +1,7 @@
-import Avaliacao from "../Avaliacao";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Comentario__Depoimentos from '../Comentario__Depoimentos';
 
 export default function Depoimentos() {
   const content = [
@@ -84,12 +84,12 @@ export default function Depoimentos() {
       </div>
 
       <div className="grid lg:grid-cols-3 gap-9 sm:grid-cols-2 max-sm:hidden lg:px-16 md:px-8 px-0">
-        <Avaliacao />
-        <Avaliacao />
-        <Avaliacao />
-        <Avaliacao />
-        <Avaliacao />
-        <Avaliacao />
+        <Comentario__Depoimentos />
+        <Comentario__Depoimentos />
+        <Comentario__Depoimentos />
+        <Comentario__Depoimentos />
+        <Comentario__Depoimentos />
+        <Comentario__Depoimentos />
       </div>
     </div>
     </section>
