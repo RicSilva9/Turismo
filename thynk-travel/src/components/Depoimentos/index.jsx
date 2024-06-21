@@ -15,7 +15,7 @@ export default function Depoimentos() {
       autor: "Lorem ipsum dolor ",
       imagem: `${process.env.PUBLIC_URL}/img/profile-img-comentario1.png`,
       destino: "destino",
-      comentario: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quo recusandae minima repudiandae est dolorum! Eos, expedita suscipit nostrum quo deleniti repellendus dolore amet sunt reiciendis laudantium, eius tempore porro.",
+      comentario: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quo recusandae minima repudiandae est dolorum!",
     },
     {
       autor: "Lorem ipsum ",
@@ -35,15 +35,15 @@ export default function Depoimentos() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 1300,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2600
+    autoplaySpeed: 5000
   };
 
   return (
-    <section className="md:mt-24 mt-16 md:mx-0 mx-4" id="depoimentos-id-nav">
+    <section className="md:mt-40 mt-32 md:mx-0 mx-4" id="depoimentos-id-nav">
       <h2 className="text-center fjalla tracking-normal leading-tight hover:cursor-default text-3xl sm:text-4xl lg:text-4xl max-w-md m-auto">Veja o que nossos clientes dizem sobre nossos serviços</h2>
       
     <div className="md:mt-10 flex justify-center">

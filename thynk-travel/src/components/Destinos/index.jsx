@@ -17,7 +17,7 @@ export default function Destino() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2600
+    autoplaySpeed: 2500
   };
   
   return (
@@ -34,7 +34,7 @@ export default function Destino() {
           <Slider {...settings}>
             {images.map((image, index) => (
               <div key={index}>
-                <img src={image} alt={`Imagem de destinos ${index}`} className="max-h-36 m-auto cursor-default"/>
+                <img src={image} alt={`Imagem de destinos ${index}`} className="max-h-80 m-auto cursor-default"/>
               </div>
             ))}
           </Slider>

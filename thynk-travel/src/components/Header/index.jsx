@@ -3,7 +3,7 @@ import Nav from '../Nav'
 export default function Header() {
   return (
     <header
-      className="bg-slate-700 text-white pt-20 pb-24 mx-4 px-16 rounded-b-2xl max-sm:mx-0 max-md:px-8 max-sm:pb-4"
+      className="bg-slate-700 text-white pt-20 pb-24 mx-4 px-16 rounded-b-2xl max-sm:mx-0 max-md:px-8 max-sm:pb-4 bg-fixed"
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL}/img/bg-header.png)`,
       }}
@@ -39,7 +39,7 @@ export default function Header() {
             <select
               id="destination"
               name="destination"
-              className="border-none px-2 pt-0 text-sm font-bold max-md:text-xs"
+              className="border-none bg-transparent md:mb-0 mb-1 px-2 pt-0 text-sm font-bold max-md:text-xs"
             >
               <option value="destino1">Brasil</option>
               <option value="destino2">Japão</option>
@@ -56,7 +56,7 @@ export default function Header() {
             <select
               id="passageiros"
               name="passageiros"
-              className="border-none px-2 pt-0 text-sm font-bold max-md:text-xs"
+              className="border-none bg-transparent md:mb-0 mb-1 px-2 pt-0 text-sm font-bold max-md:text-xs"
             >
               <option value="passageiros1">01 Passageiros</option>
               <option value="passageiros2">02 Passageiros</option>
@@ -73,7 +73,7 @@ export default function Header() {
             <select
               id="check-in"
               name="check-in"
-              className="border-none px-2 pt-0 text-sm font-bold max-md:text-xs"
+              className="border-none bg-transparent md:mb-0 mb-1 px-2 pt-0 text-sm font-bold max-md:text-xs"
             >
               <option value="check-in1">22 Dez 2024</option>
               <option value="check-in2">02 Jan 2025</option>
@@ -89,7 +89,7 @@ export default function Header() {
             <select
               id="check-out"
               name="check-out"
-              className="border-none px-2 pt-0 text-sm font-bold max-md:text-xs"
+              className="border-none bg-transparent md:mb-0 mb-1 px-2 pt-0 text-sm font-bold max-md:text-xs"
             >
               <option value="check-out1">02 Jan 2025</option>
               <option value="check-out2">22 Fev 2025</option>
