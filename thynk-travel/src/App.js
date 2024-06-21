@@ -1,6 +1,7 @@
 import Categorias from "./components/Categorias";
 import Depoimentos from "./components/Depoimentos";
 import Destino from "./components/Destinos";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Depoimentos />
         <Categorias />
       </div>
+      <Footer />
     </div>
   );
 }
