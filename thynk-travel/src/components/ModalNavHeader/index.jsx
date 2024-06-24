@@ -6,7 +6,6 @@ export default function ModalNavHeader({ isOpen, setModalOpen, children }) {
           <div>{children}</div>
 
           <div className="flex w-full justify-end">
-            {/* Vai ser tipo um header */}
             <p
               className="text-black font-bold hover:bg-red-700 py-2 p-3 text-xs inline-block cursor-pointer"
               onClick={setModalOpen}
@@ -17,7 +16,6 @@ export default function ModalNavHeader({ isOpen, setModalOpen, children }) {
 
           <div className="p-5">
             {' '}
-            {/* E esse um body */}
             <h1 className="text-black bg-red-400 p-3 text-sm">
               AVISO! Essa tela de login é para demonstração, não iremos
               armazenar dados colocados a seguir.

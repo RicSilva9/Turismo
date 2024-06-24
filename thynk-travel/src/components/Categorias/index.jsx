@@ -1,13 +1,11 @@
-// src/components/Viagens.js
-
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 const Categorias = () => {
-  const [categoriaSelecionada, setCategoriaSelecionada] = useState('parques')
+  const [categoriaSelecionada, setCategoriaSelecionada] = useState('parques');
 
   const handleCategoriaChange = (categoria) => {
-    setCategoriaSelecionada(categoria)
-  }
+    setCategoriaSelecionada(categoria);
+  };
 
   const pacotesDeViagem = [
     {
@@ -33,8 +31,8 @@ const Categorias = () => {
     {
       categoria: 'praias',
       pacotes: [
-        { 
-          id: 4, 
+        {
+          id: 4,
           nome: 'Copacabana - Brasil',
           imagem: `${process.env.PUBLIC_URL}/img/bg-cards/bg-card-praias-1.jpg`
         },
@@ -53,27 +51,24 @@ const Categorias = () => {
     {
       categoria: 'monumentos',
       pacotes: [
-        { 
-          id: 7, 
+        {
+          id: 7,
           nome: 'Torre Eiffel - França',
           imagem: `${process.env.PUBLIC_URL}/img/bg-cards/bg-card-monumentos-1.jpg`
-
         },
-        { 
-          id: 8, 
+        {
+          id: 8,
           nome: 'Machu Picchu - Peru',
           imagem: `${process.env.PUBLIC_URL}/img/bg-cards/bg-card-monumentos-2.jpg`
-
         },
-        { 
-          id: 9, 
+        {
+          id: 9,
           nome: 'Coliseu - Itália',
           imagem: `${process.env.PUBLIC_URL}/img/bg-cards/bg-card-monumentos-3.jpg`
-
         },
       ],
     },
-  ]
+  ];
 
   return (
     <div className="mx-0 sm:mx-4 px-8 md:px-16 md:mt-32 mt-24" id='categorias-id-nav'>
@@ -122,14 +117,14 @@ const Categorias = () => {
               style={{ backgroundImage: `url(${pacote.imagem})` }}
             >
               <h2 className="fjalla tracking-wide text-2xl md:text-3xl text-center text-white font-normal h-full w-full p-4 bg-black bg-opacity-40 rounded-lg">{pacote.nome}</h2>
-
               <div className='w-full z-10 flex justify-center -mt-6 mb-5'>
-                <button className='text-center text-white text-base md:text-lg lg:text-xl py-3 px-7 md:px-10 rounded-xl bg-orange-500'>Ver Pacotes</button></div>
+                <button className='text-center text-white text-base md:text-lg lg:text-xl py-3 px-7 md:px-10 rounded-xl bg-orange-500'>Ver Pacotes</button>
               </div>
+            </div>
           ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Categorias
+export default Categorias;

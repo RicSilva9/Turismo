@@ -65,7 +65,3 @@ export default function Destino() {
     </section>
   )
 }
-
-// SÓ AGORA EU APRENDI QUE USAVA A RESPONSIVIDADE DE FORMA ERRADA COLOCANDO O "MAX". QUANDO FIZER UMA REFATORADA NO CÓDIGO RU CONCERTO ISSO AQUI E NO HEADER.
-
-//eu preciso organizar melhor o codigo antes do publica-lo

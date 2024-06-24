@@ -33,23 +33,20 @@ export default function NavHeader() {
   const [openModal, setOpenModal] = useState(false)
 
   return (
-    <Disclosure
-      as="nav"
-      className="fixed top-0 left-0 right-0 z-40 px-16 max-md:px-8 sm:mx-4 max-sm:px-4 backdrop-blur bg-slate-900 bg-opacity-40 rounded-b-lg"
-    >
+    <Disclosure as="nav" className="fixed top-0 left-0 right-0 z-40 px-16 max-md:px-8 sm:mx-4 max-sm:px-4 backdrop-blur bg-slate-900 bg-opacity-40 rounded-b-lg">
       {({ open }) => (
         <>
           <ModalNavHeader isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
-            {/* Abrir modal de login */}
+            {/* Componente de modal */}
           </ModalNavHeader> 
 
           <div className="mx-auto"> 
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
+                {/* Botão de menu para dispositivos móveis */}
                 <DisclosureButton className="relative inline-flex items-center justify-center rounded-md p-2 text-orange-500 font-bold">
                   <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Open main menu</span>
+                  <span className="sr-only">Abrir menu principal</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
@@ -67,6 +64,7 @@ export default function NavHeader() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
+                    {/* Links de navegação */}
                     {navigation.map((item) => (
                       <a
                         key={item.name}
@@ -90,12 +88,12 @@ export default function NavHeader() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                {/* Profile dropdown */}
+                {/* Dropdown do perfil */}
                 <Menu as="div" className="relative ml-3">
                   <div>
                     <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="absolute -inset-1.5" />
-                      <span className="sr-only">Open user menu</span>
+                      <span className="sr-only">Abrir menu de usuário</span>
                       <img
                         className="h-8 w-8 rounded-full"
                         src="https://i.pinimg.com/736x/de/ba/87/deba871bd0100ddf6f530dc30f87272a.jpg"
@@ -113,7 +111,7 @@ export default function NavHeader() {
                   >
                     <MenuItems className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <MenuItem>
-                      <button className="text-black w-full" onClick={() => setOpenModal(true)}>Login</button>
+                        <button className="text-black w-full" onClick={() => setOpenModal(true)}>Login</button>
                       </MenuItem>
                     </MenuItems>
                   </Transition>
@@ -121,6 +119,8 @@ export default function NavHeader() {
               </div>
             </div>
           </div>
+
+          {/* Painel de navegação para dispositivos móveis */}
           <DisclosurePanel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
@@ -148,6 +148,5 @@ export default function NavHeader() {
         </>
       )}
     </Disclosure>
-    
   )
 }
