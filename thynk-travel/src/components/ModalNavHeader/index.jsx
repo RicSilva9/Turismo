@@ -1,4 +1,4 @@
-export default function Modal__Nav__Header({ isOpen, setModalOpen, children }) {
+export default function ModalNavHeader({ isOpen, setModalOpen, children }) {
   if (isOpen) {
     return (
       <div className="h-screen w-screen bg-black -ml-20 max-sm:-ml-4 bg-opacity-10 flex justify-center items-center">

@@ -1,5 +1,5 @@
 
-export default function Comentario__Depoimentos() {
+export default function ComentarioDepoimentos() {
   return (
     <div className="rounded-2xl pt-4 px-4 pb-2 bg-slate-300">
       <div className="flex items-center gap-2">

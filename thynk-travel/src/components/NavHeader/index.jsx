@@ -10,7 +10,7 @@ import {
 } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useState } from 'react'
-import Modal__Nav__Header from '../Modal__Nav__Header'
+import ModalNavHeader from '../ModalNavHeader'
 
 const navigation = [
   { name: 'Home', href: '#home-id-nav', current: true },
@@ -23,7 +23,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Nav__Header() {
+export default function NavHeader() {
   const smoothScroll = (target) => {
     document.querySelector(target).scrollIntoView({
       behavior: 'smooth',
@@ -39,9 +39,9 @@ export default function Nav__Header() {
     >
       {({ open }) => (
         <>
-          <Modal__Nav__Header isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
+          <ModalNavHeader isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
             {/* Abrir modal de login */}
-          </Modal__Nav__Header> 
+          </ModalNavHeader> 
 
           <div className="mx-auto"> 
             <div className="relative flex h-16 items-center justify-between">
