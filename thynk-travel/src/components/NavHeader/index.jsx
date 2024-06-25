@@ -33,7 +33,7 @@ export default function NavHeader() {
   const [openModal, setOpenModal] = useState(false)
 
   return (
-    <Disclosure as="nav" className="fixed top-0 left-0 right-0 z-40 px-16 max-md:px-8 sm:mx-4 max-sm:px-4 backdrop-blur bg-slate-900 bg-opacity-40 rounded-b-lg">
+    <Disclosure as="nav" className="fixed top-0 left-0 right-0 z-40 px-4 sm:px-8 md:px-16 sm:mx-4 backdrop-blur bg-slate-900 bg-opacity-40 rounded-b-lg 2xl:m-auto max-w-screen-2xl">
       {({ open }) => (
         <>
           <ModalNavHeader isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>

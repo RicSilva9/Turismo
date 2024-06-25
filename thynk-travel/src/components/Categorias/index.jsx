@@ -71,7 +71,7 @@ const Categorias = () => {
   ];
 
   return (
-    <div className="mx-0 sm:mx-4 px-8 md:px-16 md:mt-32 mt-24" id='categorias-id-nav'>
+    <div className="mx-0 sm:mx-4 px-8 md:px-16 md:py-32 py-24 xl:m-auto max-w-screen-xl" id='categorias-id-nav'>
       <h2 className="text-center fjalla tracking-normal leading-tight hover:cursor-default text-3xl sm:text-4xl max-w-md m-auto">
         Categorias populares
       </h2>

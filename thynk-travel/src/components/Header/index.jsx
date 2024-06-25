@@ -2,7 +2,7 @@ import NavHeader from "../NavHeader";
 
 export default function Header() {
   return (
-    <header className="bg-slate-700 text-white bg-fixed bg-cover bg-center rounded-b-2xl pt-20 pb-24 mx-4 px-16 max-sm:mx-0 max-md:px-8 max-sm:pb-20"
+    <header className="text-white bg-slate-700 bg-fixed bg-cover bg-center rounded-b-2xl pt-20 pb-20 sm:pb-24 mx-0 sm:mx-4 2xl:m-auto max-w-screen-2xl px-8 md:px-16"
             style={{
               backgroundImage: `url(${process.env.PUBLIC_URL}/img/header/bg-header.png)`,
             }}
