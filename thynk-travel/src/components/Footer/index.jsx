@@ -24,7 +24,7 @@ export default function Footer() {
           John Ferreira
         </a>
       </div>
-      <div className="max-sm:w-full max-md:w-1/2 m-auto mt-8">
+      <div className="max-sm:w-full max-md:w-1/2 m-auto mt-8 md:mt-0">
         <h3 className="text-center fjalla tracking-normal leading-tight hover:cursor-default text-lg sm:text-xl text-white">Televendas</h3>
         <p className="text-white text-sm mt-2">(11) 3333-2565</p>
         <p className="text-white text-sm">Segunda a Sábado : 9 às 21h</p>
