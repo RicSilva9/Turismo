@@ -1,4 +1,4 @@
-export default function ModalNavHeader({ isOpen, setModalOpen, children }) {
+export default function ModalLogin({ isOpen, setModalOpen, children }) {
   if (isOpen) {
     return (
       <div className="h-screen w-screen bg-black -ml-20 max-sm:-ml-4 bg-opacity-10 flex justify-center items-center">
@@ -83,14 +83,14 @@ export default function ModalNavHeader({ isOpen, setModalOpen, children }) {
                 </div>
               </form>
             </div>
-            <div>
-              <p className="text-center text-gray-700 text-sm mt-6 cursor-default">or with</p>
-              <div className="flex justify-center gap-5 mt-6">
-                <button className="text-black px-3 py-1 border border-black rounded-lg hover:bg-blue-500 hover:text-white hover:border-none hover:font-bold flex items-center gap-1">
+              <div>
+                <p className="text-center text-gray-700 text-sm mt-6 cursor-default">or with</p>
+                <div className="flex justify-center gap-5 mt-6">
+                <button className="text-black px-3 py-1 border border-black rounded-lg hover:bg-blue-500 hover:text-white hover:border-none hover:font-bold flex items-center gap-1 transition duration-300 ease-in-out">
                   <img src="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA" className="max-h-5 bg-slate-50 rounded-full" alt="logo google" />
                   Google
                 </button>
-                <button className="text-black px-3 py-1 border border-black rounded-lg hover:bg-black hover:text-white hover:border-none hover:font-bold flex items-center gap-1">
+                <button className="text-black px-3 py-1 border border-black rounded-lg hover:bg-black hover:text-white hover:border-none hover:font-bold flex items-center gap-1 transition duration-300 ease-in-out">
                   <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" className="max-h-5 bg-slate-50 rounded-full" alt="logo github" />
                   Github
                 </button>
