@@ -1,7 +1,34 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import ComentarioDepoimentos from '../ComentarioDepoimentos';
+
+const Comentario = (props) => {
+  return(
+    <div className="rounded-2xl pt-4 px-4 pb-2 bg-slate-300">
+      <div className="flex items-center gap-2">
+        <img src={`${process.env.PUBLIC_URL}/img/depoimentos/profile-img-comentario1.png`} alt="avatar do autor" 
+          className="lg:h-10 md:h-12" />
+        <div>
+          <h2 className="lg:text-xl md:text-lg font-bold fjalla tracking-normal leading-tight">
+            {props.autor}
+          </h2>
+          <p className="text-gray-600 lg:text-sm md:text-xs">{props.destino}</p>
+        </div>
+      </div>
+      <div>
+        <img src={`${process.env.PUBLIC_URL}/img/depoimentos/icon8.png`} alt="icon" className="lg:h-6 md:h-5" />
+        <p className="text-gray-600 text-center lg:text-base md:text-sm leading-tight">
+          {props.comentario}
+        </p>
+        <div className="flex justify-center items-center gap-3 lg:mt-3 md:mt-1">
+          {[...Array(5)].map((_, i) => (
+            <img key={i} src={`${process.env.PUBLIC_URL}/img/depoimentos/icon7.png`} alt="icon" />
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export default function Depoimentos() {
   const content = [
@@ -75,9 +102,12 @@ export default function Depoimentos() {
           </Slider>
         </div>
         <div className="grid lg:grid-cols-3 gap-9 sm:grid-cols-2 max-sm:hidden lg:px-16 md:px-8 px-0">
-          {[...Array(6)].map((_, i) => (
-            <ComentarioDepoimentos key={i} />
-          ))}
+          <Comentario autor='Joelma' destino='Maldivas' comentario='INCRIVEL!! Simplesmente a melhor e mais confortavel biagem que já fiz.' />
+          <Comentario autor='Lorem' destino='Maldivas' comentario='Lorem ipsum dolor sit amet consectetur adipisicing elit.' />
+          <Comentario autor='Lorem' destino='Maldivas' comentario='Lorem ipsum dolor sit amet consectetur adipisicing elit.' />
+          <Comentario autor='Lorem' destino='Maldivas' comentario='Lorem ipsum dolor sit amet consectetur adipisicing elit.' />
+          <Comentario autor='Lorem' destino='Maldivas' comentario='Lorem ipsum dolor sit amet consectetur adipisicing elit.' />
+          <Comentario autor='Ipsun' destino='Maldivas' comentario='Temporibus laboriosam, minus fugit nam enim sunt delectus fugiat eveniet.' />
         </div>
       </div>
     </section>

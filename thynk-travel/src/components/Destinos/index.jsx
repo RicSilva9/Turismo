@@ -3,6 +3,12 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+const TopDestinos = (props) => {
+  return(
+    <li className="lg:ms-10 fjalla tracking-normal leading-tight text-lg md:ms-4 max-md:text-base cursor-default max-md:ms-5">{props.name}</li>
+  )
+}
+
 export default function Destino() {
   const images = [
     `${process.env.PUBLIC_URL}/img/destinos/img-destinos-001.png`,
@@ -44,15 +50,15 @@ export default function Destino() {
           <h2 className="text-3xl sm:text-4xl w-3/4 fjalla tracking-normal leading-tight hover:cursor-default text-orange-500 text-center max-lg:w-full cursor-default">Destinos mais procurados</h2>
           <ul className="flex flex-wrap justify-center mt-3 w-3/4 px-10 max-lg:w-full max-md:px-5">
             <li className="border-b-2 border-orange-500 fjalla tracking-normal leading-tight text-lg max-md:ms-4 max-md:text-base cursor-default">China</li>
-            <li className="lg:ms-10 fjalla tracking-normal leading-tight text-lg md:ms-4 max-md:text-base cursor-default max-md:ms-5">Moscow</li>
-            <li className="lg:ms-10 fjalla tracking-normal leading-tight text-lg md:ms-4 max-md:text-base cursor-default max-md:ms-3">Nova York</li>
-            <li className="lg:ms-10 fjalla tracking-normal leading-tight text-lg md:ms-4 max-md:text-base cursor-default max-md:ms-3">Tokyo</li>
-            <li className="lg:ms-10 fjalla tracking-normal leading-tight text-lg md:ms-4 max-md:text-base cursor-default max-md:ms-3">Alaska</li>
-            <li className="lg:ms-10 fjalla tracking-normal leading-tight text-lg md:ms-4 max-md:text-base cursor-default max-md:ms-3">Paris</li>
-            <li className="lg:ms-10 fjalla tracking-normal leading-tight text-lg md:ms-4 max-md:text-base cursor-default max-md:ms-3">Suiça</li>
-            <li className="lg:ms-10 fjalla tracking-normal leading-tight text-lg md:ms-4 max-md:text-base cursor-default max-md:ms-3">Sidney</li>
-            <li className="lg:ms-10 fjalla tracking-normal leading-tight text-lg md:ms-4 max-md:text-base cursor-default max-md:ms-3">Rio de Janeiro</li>
-            <li className="lg:ms-10 fjalla tracking-normal leading-tight text-lg md:ms-4 max-md:text-base cursor-default max-md:ms-3">Santiago</li>
+            <TopDestinos name='Moscow'/>
+            <TopDestinos name='Nova York'/>
+            <TopDestinos name='Tokyo'/>
+            <TopDestinos name='Alaska'/>
+            <TopDestinos name='Paris'/>
+            <TopDestinos name='Suiça'/>
+            <TopDestinos name='Sidney'/>
+            <TopDestinos name='Rio de Janeiro'/>
+            <TopDestinos name='Santiago'/>
           </ul>
         </div>
       </section>
