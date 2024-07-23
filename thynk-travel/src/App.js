@@ -1,21 +1,25 @@
-import Categorias from "./components/Categorias";
-import Depoimentos from "./components/Depoimentos";
-import Destino from "./components/Destinos";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div>
-      <Header />
-      <div>
-        <Destino />
-        <Depoimentos />
-        <Categorias />
-      </div>
-      <Footer />
-    </div>
-  );
+import Header from "./components/Header";
+import Destino from "./components/Destinos";
+import Depoimentos from "./components/Depoimentos";
+import Categorias from "./components/Categorias";
+import Footer from "./components/Footer";
+
+class App extends Component{
+  render(){
+    return(
+      <>
+        <Header />
+        <div>
+          <Destino />
+          <Categorias />
+          <Depoimentos />
+        </div>
+        <Footer />
+      </>
+    ) 
+  }
 }
 
 export default App;

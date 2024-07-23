@@ -46,11 +46,13 @@ const Nav = () => {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center max-sm:hidden">
-                  <img
-                    className="h-10 w-auto"
-                    src={`${process.env.PUBLIC_URL}/img/header/business-logo.png`}
-                    alt="Logo"
-                  />
+                  <a href="#home-id-nav" onClick={(e) => { e.preventDefault(); smoothScroll('#home-id-nav'); }}>
+                    <img
+                      className="h-10 w-auto"
+                      src={`${process.env.PUBLIC_URL}/img/header/business-logo.png`}
+                      alt="Logo"
+                    />
+                  </a>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -59,7 +61,7 @@ const Nav = () => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={classNames(
+                        class={classNames(
                           item.current
                             ? 'text-white hover:bg-gray-700 hover:text-white'
                             : 'text-white hover:bg-gray-700 hover:text-white',

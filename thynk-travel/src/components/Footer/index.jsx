@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-orange-500">
+    <footer className="w-full bg-orange-500 md:mt-32 mt-24">
       <section className="flex justify-around flex-col md:flex-row p-12 pb-8 md:p-16 md:pb-10 max-sm:px-3 2xl:m-auto max-w-screen-2xl">
         <div>
           <h3 className="text-center fjalla tracking-normal leading-tight hover:cursor-default text-lg sm:text-xl text-white">Formas de pagamento:</h3>
