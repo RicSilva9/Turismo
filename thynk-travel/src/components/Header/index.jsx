@@ -8,9 +8,9 @@ import ModalLogin from '../ModalLogin';
 
 const navigation = [
   { name: 'Home', href: '#home-id-nav', current: true },
-  { name: 'Destinos', href: '#destinos-id-nav', current: false },
-  { name: 'Depoimentos', href: '#depoimentos-id-nav', current: false },
   { name: 'Categorias', href: '#categorias-id-nav', current: false },
+  // { name: 'Destinos', href: '#destinos-id-nav', current: false },
+  // { name: 'Depoimentos', href: '#depoimentos-id-nav', current: false },
 ]
 
 const Nav = () => {

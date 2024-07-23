@@ -27,7 +27,7 @@ export default function Destino() {
   };
   
   return (
-    <section className="lg:px-16 mx-4 max-sm:mx-0 md:px-8 flex lg:-mt-10 max-md:px-0 2xl:mx-auto max-w-screen-2xl" id='destinos-id-nav'>
+    <section className="lg:px-16 mx-4 max-sm:mx-0 md:px-8 flex lg:-mt-10 max-md:px-0 2xl:mx-auto max-w-screen-2xl">
 
       <section className="md:w-3/4 max-md:px-4 w-full">
 
